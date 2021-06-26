@@ -313,7 +313,6 @@ fn initialize_window(
         let wm_class_name = format!("eww-{}", window_def.name);
         window.set_wmclass(&wm_class_name, &wm_class_name);
         window.set_position(gtk::WindowPosition::Center);
-        window.set_size_request(actual_window_rect.width, actual_window_rect.height);
         window.set_default_size(actual_window_rect.width, actual_window_rect.height);
         window.set_decorated(false);
         // run on_screen_changed to set the visual correctly initially.
